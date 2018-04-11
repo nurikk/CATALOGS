@@ -1,0 +1,17 @@
+html, body {min-width: 900px}
+.row {font-family:Arial,sans-serif; font-size:8pt; margin: 1px 1px 1px 1px;}
+.selected {font-family:Arial,sans-serif; font-size:8pt; margin: 1px 1px 1px 1px; background:#EFEFEF}
+.boldrow {font-family:Arial,sans-serif; font-size:8pt; margin: 1px 1px 1px 1px; font-weight:bold}
+.text {font-family:Arial,sans-serif; font-size:11pt; margin: 1px 1px 1px 1px;}
+.itext {font-family:Arial,sans-serif; font-size:11pt; margin: 1px 1px 1px 1px; font-style:italic}
+.head {font-family:Arial,sans-serif; font-size:14pt; text-align:center; color:blue}
+.caption {background:#6699FF; color:white; text-align:center; font-weight:bold}
+a {color: blue; text-decoration: none}
+.btn-group {margin: 0 0 0px;}
+.btn {display:inline-block; margin: 2px; text-decoration: none; cursor: pointer;}
+.btn:hover {text-decoration: none; color: #000;}
+.inputs-group {padding: 2px;}
+.hidden {display: none !important;}
+.pull-left {float: left;}
+.pull-right {float: right;}
+table th{background-color:#ff6600; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky;  position: -o-sticky; position: sticky; top: 0px;}

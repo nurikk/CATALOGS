@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <META content="text/html; charset=utf-8" http-equiv=Content-Type>
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv=expires content=0>
+    <meta http-equiv=expires content="Sun, 22 Mar 1998 16:18:35 GMT">
+    <meta http-equiv=Cache-Control content="no-cache, must-revalidate, max_age=0">
+    <title>Каталоги</title>
+    <link rel='stylesheet' type='text/css' href='styles.css'>
+    <link rel='stylesheet' type='text/css' href='CSSMenu.css'>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+
+            $('.btn-switcher').on('click', function(event){
+                event.preventDefault();
+                var $btn = $(this),
+                    $btnGroup = $btn.closest('.btn-group'),
+                    $inputsGroup = $('.inputs-group', $btnGroup);
+                $btn.hide();
+                $inputsGroup.toggleClass('hidden'); // класс изменяющий видимость инпутов
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+        function delForm(name, name1) {
+            if(confirm("Вы действительно хотите удалить " + "\n Артикул: \"" + name + "\n Наименование" + name1 + "\"?")) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+    <script type="text/javascript">
+            function updForm(name, name1, action)
+            {
+                switch (action) {
+                    case 'delete':
+                        alert ( 'DELETE' );
+                        if (confirm("Вы действительно хотите удалить" + "\n Артикул: \"" + name + "\n Наименование" + name1 + "\"?"))
+                        {
+
+                            return true;
+
+                        }
+                        else {
+                            return false;
+                        }
+                        break;
+
+                    case 'update':
+                        alert( 'UPDATE' );
+                        return action;
+                        break;
+
+                    default:
+                        alert ('НИХЕРА');
+                        alert ('!' + action + '!');
+
+
+
+
+                }
+            }
+
+
+
+
+
+    </script>
+    <script type="text/javascript"> //Функция передает перем action = update для изменения сроки без подтверждения.
+        function updForm2() {
+            if (1) {
+                var action;
+                action = "update";
+                return action;
+                    } else  {
+                            return false;
+                            }
+        }
+    </script>
+
+</head>
+<body>
+<table width="99%" border="1">
+    <tr>
+        <td width="50px"><a href="/catalogs/">Домой</a></td>
+        <td><center>Шапка</center></td>
+    </tr>
+</table>
+
+
+<!-- End Header -->
+
+
